@@ -1,0 +1,33 @@
+OS is the core software that sits between the user, the apps and the hardware and manages all of them. You can think of it as air traffic control for your computer.
+
+Privilege layers
+
+Kernel space: where the kernel runs, with full access to the hardware.
+User space: where apps run, with restricted access. To use hardware, an app has to ask the kernel through a system call. Because of this split, one bad app can’t crash the whole system.
+
+Core duties
+
+Process management: schedules programs and shares out CPU time.
+Memory management: gives RAM to apps, keeps them isolated from each other, and uses virtual memory when RAM runs low.
+File system management: handles folders, paths, permissions and metadata.
+User management: handles accounts, logins and access rights.
+Device management: uses drivers and a hardware abstraction layer so devices work with apps.
+
+Security: authentication, permissions, process isolation and protection of system files.
+
+Interfaces
+
+GUI: visual, point and click, easy to use.
+CLI: typed commands, more precise and faster, but you need to know the commands.
+
+OS types
+
+Desktop: Windows, macOS, Linux (Ubuntu, Debian, Fedora).
+Server: headless (no screen) and built for uptime. Examples are Windows Server, Linux and Unix (AIX, Solaris).
+Mobile: touch-based and power-efficient. Examples are Android and iOS.
+Embedded/IoT: small and lightweight. Examples are OpenWrt and real-time OSes like FreeRTOS, VxWorks and QNX.
+Virtual/Cloud: scalable and fast to deploy. Examples are Ubuntu LTS and Amazon Linux, plus Alpine and Bottlerocket for containers.
+
+Why so many? Different devices need different things: ease of use, uptime, battery life or a small footprint.
+
+Lab: The gifted computer runs Ubuntu Linux. You checked it using About This Computer and the Home directory.
